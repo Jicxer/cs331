@@ -1,0 +1,54 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage{amsthm}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{amssymb, mathtools}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\title{CS 331 Homework 1}
+\author{Ivan Chan \textit{933821369}}
+\begin{document}
+  
+\textbf{CS 321 Homework 1}
+
+\begin{enumerate}
+  \item(10 points) Experiment with ChatGPTLinks to an external site. 
+  To answer the following questions. Give examples to justify your answers. 
+  How close does it come to the level of intelligence of ordinary humans? 
+  Are there places where it seems to exceed average human intelligence? 
+  Where does it fall short? Do you think that ChatGPT-like approach would lead to a program that passes the Turing Test in the next 5 years? Why or why not?
+
+Question: \textbf{Is the difference between a fish purely that one of its legs are both the same?}\\
+Answer: \textbf{No, the difference between a fish and a land-dwelling animal like a mammal or a bird goes beyond the fact that fish don't have legs or that their limbs are fins instead.}\\
+ChatGPT continues to justify the dinstinct differences between a land-dwelling mammal or bird to an aquatic creature such as a fish.
+In this case, the question's correct answer given by a rational human would be sufficed with \emph{Fish don't have legs.}
+It is common semantic knowledge that fish do not have legs and there were no comparisons made to other species. The AI may sense the grammatical errors yet not the abusridity of the statement.
+
+
+  \item  (5 points) Design a simple reflex agent program and a model-based reflex agent program for a vacuum cleaner agent that lives in an N-room corridor. 
+  Each cell that has dirt costs 5 points in each step. Initially all cells are dirty. 
+  The agent can be any cell when it starts. It can only perceive  whether there is dirt in its current cell or not and does not know where it is. 
+  It has the following set of actions: Move-Left, Move-Right, Suck, Halt. Nothing happens if the agent executes Move-Left from the leftmost cell, Move-right from the rightmost cell, or Suck in a clean cell. 
+  Otherwise the actions are successful. In either case, each action costs 1 unit.  Assume that a cell which has been cleaned remains clean.
+  
+  \emph{Represent each agent as a decision list of rules of the form: If <condition> Then <action>.  At every time step, the <condition>s of the rules are tested from the first rule the list to the last rule. The first rule whose <condition> is satisfied "fires", i.e., its  corresponding <action> is executed.}\\
+  \emph{Note that the <condition>  is based only on current percept for the simple reflex agent. For the model-based reflex agent, it can also be based on a small number (2-3) bits of memory derived from the percept history of the agent. Describe what the bits represent in English and how and when they are updated. The <condition>s in the rules can combine memory bits and current percept using ANDs.}\\
+  \emph{What is the expected behavior of your agents in this environment for different starting locations of the agent? Write a mathematical function for the total cost incurred by each of your agents as a function of time t, the size of the environment N, and the starting location of the agent x.}
+
+  
+  
+
+  \item (5 points) For each of the following activities, characterize the environment in terms of the properties we discussed in the class.
+    \begin{enumerate}
+      \item Playing the game of Go
+      \item Solving Sudoku
+      \item Shopping for used books on the Internet
+      \item Solving jigsaw puzzles
+      \item Scheduling a meeting
+    \end{enumerate}
+
+ 
+\end{enumerate}
+    
+    
+\end{document}
